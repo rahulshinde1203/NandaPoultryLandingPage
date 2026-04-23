@@ -18,11 +18,17 @@
 
 /* ── Base ── */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 body {
   font-family: 'Poppins', sans-serif;
   background: #fff;
   color: #1a1a1a;
+  overflow-x: hidden;
+}
+section {
   overflow-x: hidden;
 }
 
@@ -117,15 +123,15 @@ body {
   filter: blur(80px); pointer-events: none;
 }
 .orb-1 {
-  width: 500px; height: 500px;
+  width: 300px; height: 300px;
   background: radial-gradient(circle, rgba(212,175,55,.18) 0%, transparent 70%);
-  top: -150px; right: -100px;
+  top: -80px; right: -60px;
   animation: float 8s ease-in-out infinite;
 }
 .orb-2 {
-  width: 350px; height: 350px;
+  width: 250px; height: 250px;
   background: radial-gradient(circle, rgba(42,122,80,.25) 0%, transparent 70%);
-  bottom: -100px; left: -80px;
+  bottom: -60px; left: -50px;
   animation: float 10s ease-in-out infinite reverse;
 }
 .hero-badge {

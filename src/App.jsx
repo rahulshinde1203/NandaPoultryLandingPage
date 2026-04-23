@@ -30,7 +30,7 @@ export default function App() {
     <>
       <Loader loaded={loaded} />
       <Navbar />
-      <main>
+      <main style={{ overflowX: 'hidden' }}>
         <Hero />
         <About />
         <Services />
